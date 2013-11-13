@@ -4,7 +4,6 @@ body {
 	width: 770px;
 	margin-left:auto;
 	margin-right:auto;
-	border: 10px dotted #0F0;
 	margin-top: 50px;
 }
 #MainContent {
@@ -47,3 +46,23 @@ p,li {
 	font-family: "Arial Black", Gadget, sans-serif;
 	font-weight: normal;
 }
+
+.border {
+    width: 790px;
+    border: 10px dotted #0F0;
+}
+
+/* navbar */
+.navbar-default {
+    background-color: #0FF;
+    border-color: #00D0FF;
+}
+.navbar-default .navbar-nav > li > a:hover {
+    background-color: #00EEFF;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    background-color: #00DDFF;
+}
+

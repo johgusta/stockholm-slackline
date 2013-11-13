@@ -3,6 +3,13 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>StockholmSlackline.OfAwesome.se</title>
+
+<!-- Bootstrap core CSS -->
+<link href="dist/css/bootstrap.css" rel="stylesheet">
+
+<!-- Custom styles for this template -->
+<link href="jumbotron-narrow.css" rel="stylesheet">
+
 <link href="cssofawesome.css" rel="stylesheet" type="text/css">
 <script type="text/javascript">
 
@@ -21,9 +28,22 @@
 </head>
 
 <body>
+<div class="border">
 <div id="MainContent">
   <div style="width:450; border-width:medium; border-color:#00F" align="center"> <img src="images/SthlmSlack_header.gif" alt="StockholmSlackline.se">
-    <div id="Navigation"><a href="index.html">Home</a> | <a href="slackspots.html">Slack Spots</a> | <a href="directory.html">Directory</a> | <a href="http://web.stagram.com/tag/sthlmslackline/">#Sthlmslackline</a></div>
+      <!-- Static navbar -->
+      <div class="navbar navbar-default" role="navigation">
+          <div class="navbar-collapse collapse slackmenu">
+              <ul class="nav navbar-nav">
+                  <li><a href="index.html">Home</a></li>
+                  <li class=active><a href="slackspots.html">Slack Spots</a></li>
+                  <li><a href="directory.html">Directory</a></li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                  <li><a href="http://web.stagram.com/tag/sthlmslackline/" target=_blank>#Sthlmslackline</a></li>
+              </ul>
+          </div><!--/.nav-collapse -->
+      </div>
   </div>
   <h3>Slack Spots in Stockholm</h3>
   <p>Here are some spots members have enjoyed slacklining around the city.</p>
@@ -33,5 +53,11 @@
   <p id="footer"><a href="../ofawesome/index.html">OfAwesome.se</a>| <a href="mailto:jessica@ofawesome.se">Contact</a><br>
 Last Update: <!-- #BeginDate format:IS1 -->2013-10-16<!-- #EndDate --></p>
 </div>
+</div>
+<!-- Bootstrap core JavaScript
+    ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="dist/js/bootstrap.min.js"></script>
 </body>
 </html>
