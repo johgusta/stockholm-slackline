@@ -1,0 +1,49 @@
+body {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	background-color: #FF0;
+	width: 770px;
+	margin-left:auto;
+	margin-right:auto;
+	border: 10px dotted #0F0;
+	margin-top: 50px;
+}
+#MainContent {
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 0px;
+	padding-left: 10px;
+	border: 10px dotted #0F0;
+	height: 100%;
+}
+#footer {
+	color: #FFF;
+	background-color: #6665F6;
+	font-size: x-small;
+	text-align: center;
+	clear: both;
+}
+p,li {
+	font-size: small;
+}img {
+	border: 10px dashed #6666ff;
+	margin: 10px;
+}
+.floatleft {
+	float: left;
+}
+.floatright {
+	float: right;
+}
+.floatclear {
+	clear: both;
+}
+#footer a {
+	color: #FFF;
+}
+#Navigation {
+	background-color: #0FF;
+	text-align: center;
+	font-size: medium;
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-weight: normal;
+}
