@@ -91,3 +91,9 @@
 
         CustomLog ${APACHE_LOG_DIR}/access.log combined
 </VirtualHost>
+
+<VirtualHost *:80>
+    ProxyPreserveHost On
+    ProxyPass / http://192.168.0.22:4567/
+    ServerName deploy.ofawesome.se
+</VirtualHost>
