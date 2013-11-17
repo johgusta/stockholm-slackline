@@ -1,0 +1,93 @@
+<VirtualHost *:80>
+        ServerAdmin webmaster@localhost
+        ServerName www.ofawesome.se
+
+        DocumentRoot /var/www/ofawesome
+        <Directory />
+                Options FollowSymLinks
+                AllowOverride None
+        </Directory>
+        <Directory /var/www/ofawesome>
+                RewriteEngine on
+                RewriteBase /
+
+                # If empty subdomain, replace with "www"
+                RewriteCond %{HTTP_HOST} ^ofawesome\.se$
+                RewriteRule ^(.*) http://www.ofawesome.se/$1 [QSA,L,R=301]
+
+		# If empty subdomain, replace with "www"
+                RewriteCond %{HTTP_HOST} ^www\.stockholmslackline\.ofawesome\.se$
+                RewriteRule ^(.*) http://stockholmslackline.ofawesome.se/$1 [QSA,L,R=301]
+
+                RewriteCond %{HTTP_HOST} !^www\.ofawesome\.se$
+                RewriteCond %{HTTP_HOST} ^(.*)\.ofawesome\.se$
+                RewriteRule (.*) http://www.ofawesome.se/%1/$1 [QSA,L,R=301]
+
+                Options Indexes FollowSymLinks MultiViews
+                AllowOverride None
+                Order allow,deny
+                allow from all
+        </Directory>
+
+        ScriptAlias /cgi-bin/ /usr/lib/cgi-bin/
+        <Directory "/usr/lib/cgi-bin">
+                AllowOverride None
+                Options +ExecCGI -MultiViews +SymLinksIfOwnerMatch
+                Order allow,deny
+                Allow from all
+        </Directory>
+
+        ErrorLog ${APACHE_LOG_DIR}/error.log
+
+        # Possible values include: debug, info, notice, warn, error, crit,
+        # alert, emerg.
+        LogLevel warn
+
+        CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
+
+<VirtualHost *:80>
+        ServerAdmin webmaster@localhost
+        ServerName stockholmslackline.ofawesome.se
+
+        DocumentRoot /var/www/stockholmslackline
+        <Directory />
+                Options FollowSymLinks
+                AllowOverride None
+        </Directory>
+        <Directory /var/www/stockholmslackline/>
+	        RewriteEngine On
+                RewriteEngine On
+                RewriteCond %{REQUEST_FILENAME} !-f
+                RewriteCond %{REQUEST_FILENAME} !-d
+                RewriteCond %{REQUEST_URI} !.*\.(css|js|html|png)
+                RewriteRule (.*) index.html [L]
+
+                RewriteCond %{QUERY_STRING} ^_escaped_fragment_=$
+                RewriteRule ^$ /snapshots/home.html [L]
+
+                RewriteCond %{QUERY_STRING} ^_escaped_fragment_=(.*)$
+                RewriteRule ^$ /snapshots/%1.html [L]
+
+                Options Indexes FollowSymLinks MultiViews
+                AllowOverride None
+                Order allow,deny
+                allow from all
+        </Directory>
+
+        ScriptAlias /cgi-bin/ /usr/lib/cgi-bin/
+        <Directory "/usr/lib/cgi-bin">
+                AllowOverride None
+                Options +ExecCGI -MultiViews +SymLinksIfOwnerMatch
+                Order allow,deny
+                Allow from all
+        </Directory>
+
+        ErrorLog ${APACHE_LOG_DIR}/error.log
+
+        # Possible values include: debug, info, notice, warn, error, crit,
+        # alert, emerg.
+        LogLevel warn
+
+        CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
