@@ -1,0 +1,82 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="sv" ng-app="sthlmslack">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="fragment" content="!" />
+<title>StockholmSlackline.OfAwesome.se</title>
+<!-- Bootstrap core CSS -->
+<link href="dist/css/bootstrap.css" rel="stylesheet">
+
+<link href="cssofawesome.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-40676715-1']);
+  _gaq.push(['_setDomainName', 'ofawesome.se']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+
+<body>
+<div class="border">
+<div id="MainContent">
+  <div style="width:450; border-width:medium; border-color:#00F" align="center"> <img src="images/SthlmSlack_header.gif" alt="StockholmSlackline.se">
+      <!-- Static navbar -->
+      <div class="navbar navbar-default" role="navigation" ng-controller="menuCtrl">
+          <div class="navbar-collapse collapse slackmenu">
+              <ul class="nav navbar-nav">
+                  <li ng-class="{active: isActive('/') }"><a href="/">Home</a></li>
+                  <li ng-class="{active: isActive('/slackspots') }"><a href="/slackspots">Slack Spots</a></li>
+                  <li ng-class="{active: isActive('/directory') }"><a href="/directory">Directory</a></li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                  <li><a href="http://web.stagram.com/tag/sthlmslackline/" target=_blank>#Sthlmslackline</a></li>
+              </ul>
+          </div><!--/.nav-collapse -->
+      </div>
+  </div>
+<div>
+    <h3>Föreningen Stockholm Slackline (FStSL)</h3>
+    <p>Fokus för FStSL skall vara att sprida information om och utöva slacklining samt under
+
+        vintertid ombesörja bokandet av lokaler så man kan bedriva slacklining inomhus för såväl
+
+        medlemar som icke-medlemmar. Man ska utöver detta sträva efter att ha minst ett (1) större
+
+        och två (2) mindre event under året för både medlemmar som icke-medlemmar för att sprida
+
+        intresset för slacklining i Sverige. Ansvarig för detta är föreningens styrelse.</p>
+    <p>Vill du vara med i Verksamhetsplanen? Kontakta <a href="https://www.facebook.com/markus.hedin.58">Markus Hedin</a>.</p>
+    <h3>När? Var?</h3>
+    <p>Alla möter publiseras genom våra Facebook grupp: <a href="https://www.facebook.com/groups/445069082194192/">Stockholm Slackline</a>. <br>
+        Du behöver inte betala medlemsavgiften för att vara med i gruppen på Facebook.</p>
+    <h3>Vem?</h3>
+    <p><strong>Ordförande</strong>: <a href="https://www.facebook.com/markus.hedin.58">Markus Hedin</a><br>
+        <strong>Sekreterare</strong>: Jakob Stuart<br>
+        <strong>Ordinarie styrelseledamöter</strong>: Maya Jönsson, Johan Gustafson, David Hultan, Jakob Stuart<br>
+        <strong>Suppleant</strong>: Carl Ljungholm</p>
+    <h3>Medlemsavgift</h3>
+    <p>Medlemsavgiften är 100 SEK. <br>
+        (BankGiro information kommer snart).</p>
+</div>  <p id="footer"><a href="http://www.ofawesome.se/">OfAwesome.se</a>| <a href="mailto:jessica@ofawesome.se">Contact</a><br>
+Last Update: <!-- #BeginDate format:IS1 -->2013-10-16<!-- #EndDate --></p>
+</div>
+</div>
+<!-- Bootstrap core JavaScript
+    ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="dist/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular-route.js"></script>
+<script type="text/javascript" src="js/sthlmslack.js"></script>
+</body>
+</html>
