@@ -4,10 +4,61 @@ body {
 	background-color: #BBBBFF;
 	margin:           30px;
 	padding:          0;
+	width: auto;
+}
+@media all and (max-width: 600px) {
+	body {
+		margin:           20px;
+	}
+}
+@media all and (max-width: 300px) {
+	body {
+		margin:           10px;
+	}
+}
+@media all and (min-width: 1460px) {
+	body {
+		width:           1400px;
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
 #Header {
 	margin: 0;
 }
+#HeaderBanner {
+	background-image: url('images/SthlmSlack_header.gif');
+	background-size: cover; 
+	background-position: left bottom;
+	height:200px; 
+	box-shadow: 10px 10px 5px #222133;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-right: 10px;
+	margin-bottom: 20px;
+	box-shadow: 10px 10px 5px #222133;
+}
+#HeaderBanner h1 {
+	color: #2423B2;
+	text-align: left;
+	text-shadow: 2px 2px black;
+	font-size: 50px;
+}
+#HeaderBanner h3 {
+	color: yellow;
+	text-align: right;
+	text-shadow: 2px 2px black;
+	font-size: 30px;
+}
+#HeaderBanner span {
+	font-family: Garamond, Georgia, Serif;
+	font-weight: bold;
+	background: rgba(255,255,255,0.35);
+	padding: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
 #MainContent {
 	background-color: white;
 	padding: 30px;
@@ -72,5 +123,6 @@ img {
 .navbar-default .navbar-nav > .active > a:focus {
 	color: black;
     background-color: #FFD619;
+	outline: 0;
 }
 
