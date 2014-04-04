@@ -1,1 +1,2 @@
-Website for Stockholm Slackline of Awesome!
+Website for [Stockholm Slackline](http://stockholmslackline.ofawesome.se/) of Awesome!
+

@@ -1,31 +1,89 @@
 body {
-	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-	background-color: #FF0;
-	width: 770px;
-	margin-left:auto;
-	margin-right:auto;
-	margin-top: 50px;
+	font-family:      "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	color:            black;
+	background-color: #BBBBFF;
+	margin:           30px;
+	padding:          0;
+	width: auto;
 }
+@media all and (max-width: 600px) {
+	body {
+		margin:           20px;
+	}
+}
+@media all and (max-width: 300px) {
+	body {
+		margin:           10px;
+	}
+}
+@media all and (min-width: 1460px) {
+	body {
+		width:           1400px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+#Header {
+	margin: 0;
+}
+#HeaderBanner {
+	background-image: url('images/SthlmSlack_header.gif');
+	background-size: cover; 
+	background-position: left bottom;
+	height:200px; 
+	box-shadow: 10px 10px 5px #222133;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-right: 10px;
+	margin-bottom: 20px;
+	box-shadow: 10px 10px 5px #222133;
+}
+#HeaderBanner h1 {
+	color: #2423B2;
+	text-align: left;
+	text-shadow: 2px 2px black;
+	font-size: 50px;
+}
+#HeaderBanner h3 {
+	color: yellow;
+	text-align: right;
+	text-shadow: 2px 2px black;
+	font-size: 30px;
+}
+#HeaderBanner span {
+	font-family: Garamond, Georgia, Serif;
+	font-weight: bold;
+	background: rgba(255,255,255,0.35);
+	padding: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
 #MainContent {
-	padding-top: 10px;
-	padding-right: 10px;
-	padding-bottom: 0px;
-	padding-left: 10px;
-	border: 10px dotted #0F0;
+	background-color: white;
+	padding: 30px;
 	height: 100%;
 }
+
+.mainContentBorder {
+	background-color: #FFD619;
+	height: 10px;
+	width: 100%;
+}
+
 #footer {
-	color: #FFF;
-	background-color: #6665F6;
+	background-color: #2423B2;
+	color: white;
 	font-size: x-small;
 	text-align: center;
 	clear: both;
 }
 p,li {
 	font-size: small;
-}img {
-	border: 10px dashed #6666ff;
-	margin: 10px;
+}
+img {
+	box-shadow: 10px 10px 5px #222133;
+	margin: 20px;
 }
 .floatleft {
 	float: left;
@@ -39,30 +97,32 @@ p,li {
 #footer a {
 	color: #FFF;
 }
-#Navigation {
-	background-color: #0FF;
-	text-align: center;
-	font-size: medium;
-	font-family: "Arial Black", Gadget, sans-serif;
-	font-weight: normal;
-}
 
 .border {
-    width: 790px;
-    border: 10px dotted #0F0;
+    border: 0px solid #2423B2;
 }
 
 /* navbar */
 .navbar-default {
-    background-color: #0FF;
-    border-color: #00D0FF;
+    background-color: #2423B2;
+	border: #2423B2;
+	border-radius: 0;
+	margin-bottom:0px;
+	color:white;
 }
+.navbar-default .navbar-nav > li > a {
+	color:white;
+}
+
 .navbar-default .navbar-nav > li > a:hover {
-    background-color: #00EEFF;
+    background-color: #8174FF;
+	color:white;
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-    background-color: #00DDFF;
+	color: black;
+    background-color: #FFD619;
+	outline: 0;
 }
 
